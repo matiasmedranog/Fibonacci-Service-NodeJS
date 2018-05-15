@@ -2,8 +2,6 @@ FROM node:carbon
 WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install
-# If you are building your code for production
-# RUN npm install --only=production
 COPY . .
-EXPOSE 3000
+EXPOSE 3000:3000
 CMD [ "npm", "start" ]
