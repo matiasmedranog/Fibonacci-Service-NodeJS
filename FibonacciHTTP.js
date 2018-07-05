@@ -6,6 +6,6 @@ app.get('/:number', function (req, res) {
 	var results = {n: Fibonacci.fibonacci(number), "n-1": Fibonacci.fibonacci(number-1)}
 	res.send(results);
 });
-var server = app.listen(3003, function () {
-	  console.log('Servidor ejecutandose en localhost:3003');
+var server = app.listen(3002, function () {
+	  console.log('Servidor ejecutandose en localhost:3002');
 });
