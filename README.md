@@ -25,9 +25,9 @@ docker-compose up -d
 
 And send a test curl:
 ```
-curl -X GET http://localhost:3000/\?numero\=10
-curl -X GET http://localhost:3000/\?numero\=11
-curl -X GET http://localhost:3000/\?numero\=12
-curl -X GET http://localhost:3000/\?numero\=13
-curl -X GET http://localhost:3000/\?numero\=[Nº]
+curl http://localhost:3002/10
+curl http://localhost:3002/11
+curl http://localhost:3002/12
+curl http://localhost:3002/13
+curl http://localhost:3002/[Nº]
 ```
